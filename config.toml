@@ -1,0 +1,129 @@
+baseURL = 'https://uraniborgai.com/'
+title = 'Uraniborg AI'
+theme = ['PaperMod']
+
+DefaultContentLanguage = 'ko'
+pagination.pagerSize = 5
+staticDir = ['static']
+
+enableInlineShortcodes = true
+enableRobotsTXT = true
+buildDrafts = false
+buildFuture = false
+buildExpired = false
+enableEmoji = true
+
+[permalinks]
+posts = '/posts/:year/:month/:slug/'
+
+[minify]
+disableXML = true
+
+[languages]
+
+[languages.ko]
+title = 'Uraniborg AI'
+weight = 1
+contentDir = 'content'
+disabled = false
+locale = 'ko-KR'
+direction = 'ltr'
+label = 'Korean'
+
+[languages.ko.taxonomies]
+category = 'categories'
+tag = 'tags'
+series = 'series'
+
+[[languages.ko.menu.main]]
+name = '소개'
+url = '/'
+weight = 10
+
+[[languages.ko.menu.main]]
+name = '글'
+url = 'posts/'
+weight = 20
+
+[[languages.ko.menu.main]]
+name = '검색'
+url = 'search/'
+weight = 30
+
+[[languages.ko.menu.main]]
+name = 'GitHub'
+url = 'https://github.com/uraniborg-ai/uraniborg-ai.github.io'
+weight = 40
+
+[outputs]
+home = ['HTML', 'RSS', 'JSON']
+
+[params]
+env = 'production'
+description = '과학과 공학 분야에서 AI 활용을 더 잘 이해하고 적용하기 위한 문서 저장소'
+author = 'Uraniborg AI'
+defaultTheme = 'auto'
+ShowReadingTime = false
+ShowShareButtons = true
+ShowPostNavLinks = true
+ShowBreadCrumbs = true
+ShowCodeCopyButtons = true
+ShowWordCount = false
+ShowRssButtonInSectionTermList = true
+UseHugoToc = true
+disableSpecial1stPost = false
+disableScrollToTop = false
+comments = false
+hidemeta = false
+hideSummary = false
+showtoc = true
+tocopen = false
+displayFullLangName = true
+DateFormat = '2006-01-02'
+mainSections = ['posts']
+
+[[params.socialIcons]]
+name = 'GitHub'
+url = 'https://github.com/uraniborg-ai'
+
+[[params.socialIcons]]
+name = 'RSS'
+url = 'index.xml'
+
+[params.assets]
+disableHLJS = true
+
+[markup]
+
+[markup.goldmark.renderer]
+unsafe = true
+
+[markup.highlight]
+codeFences = true
+guessSyntax = true
+lineNos = true
+noClasses = false
+style = 'github'
+
+[privacy.vimeo]
+disabled = false
+simple = true
+
+[privacy.x]
+disabled = false
+enableDNT = true
+simple = true
+
+[privacy.instagram]
+disabled = false
+simple = true
+
+[privacy.youtube]
+disabled = false
+privacyEnhanced = true
+
+[services.instagram]
+disableInlineCSS = true
+
+[services.x]
+disableInlineCSS = true

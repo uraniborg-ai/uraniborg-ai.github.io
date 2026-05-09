@@ -45,7 +45,7 @@ jobs:
 
       - name: Build
         run: |
-          hugo --gc --minify --baseURL "https://uraniborgai.com/"
+          hugo --gc --minify --baseURL "https://uraniborg-ai.github.io/"
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v5

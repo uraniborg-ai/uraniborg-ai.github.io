@@ -14,5 +14,4 @@ hugo server -D
 hugo --gc --minify
 ```
 
-The site is deployed to GitHub Pages from the `main` branch. The custom domain is
-managed through `static/CNAME`.
+The site is deployed to GitHub Pages from the `main` branch.
